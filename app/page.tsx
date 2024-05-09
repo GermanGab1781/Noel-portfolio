@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default bg-[url('../public/images/Fondo.png')] bg-cover ">
+    <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default bg-[url('../public/images/Fondo.png')] bg-cover md:pb-0 pb-20">
       {/* Titulo e Info */}
       <section className="md:w-[60vw] h-[90vh] md:mt-0 mt-[8vh] m-auto">
         <div className='flex flex-col md:h-[30%] md:w-[80%] w-full md:mb-0 mb-[24vh] place-content-center text-center whitespace-nowrap'>
@@ -15,7 +15,7 @@ export default function Home() {
         {/* Info */}
         <div className='h-[70%] md:pl-10 pt-10 bg-gradient-to-b from-blue-900 to-transparent text-gray-300 '>
           {/* Ramas de derecho */}
-          <h2 className='text-3xl text-white text-center'>Ramas de derecho</h2>
+          <h2 className='text-3xl text-white md:text-start text-center'>Ramas de derecho</h2>
           <div className='flex flex-wrap gap-5 mt-2 md:text-xl'>
             <div className='ml-4 group'>
               <h3 className='group-hover:text-white md:text-gray-300 text-white decoration-gray-300 md:text-2xl text-lg'>Derecho Público</h3>
@@ -43,11 +43,12 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Link href="/dudas" className='text-2xl text-white group'><p className='mt-10 group-hover:scale-105 group-hover:text-blue-500  transition-all'>Resolución de dudas jurídicas</p></Link>
-          <Link href="/consultas" className='text-2xl text-white group'><p className="group-hover:scale-105  group-hover:text-blue-500 transition-all">Consultas virtuales</p></Link>
-          <div className="flex flex-row mt-10 m-auto">
+          {/* Links */}
+          <Link href="/dudas" className='text-2xl text-white group'><p className='mt-10 w-[95%] mx-auto group-hover:scale-105 border group-hover:border-gray-500 border-gray-900 rounded-xl bg-blue-950 text-center group-hover:text-blue-500  transition-all'>Resolución de dudas jurídicas</p></Link>
+          <Link href="/consultas" className='text-2xl text-white group'><p className="mt-2 w-[95%] mx-auto group-hover:scale-105 border group-hover:border-gray-500 border-gray-900 rounded-xl bg-blue-950 text-center  group-hover:text-blue-500 transition-all">Consultas virtuales</p></Link>
+          <div className="flex md:flex-row flex-col md:text-start text-center md:mt-10 mt-5 m-auto">
             <p className='text-2xl text-blue-500 my-auto'>Contactame:</p>
-            <span className="flex gap-x-4 ml-10 text-[50px]">
+            <span className="flex gap-x-4 md:ml-10 place-content-center md:text-[50px] text-[60px]">
               <a href="https://wa.me/+5492901304989?text=Hola, me gustaria consultar sobre los servicios del estudio jurídico" target="_blank">
                 <TbBrandWhatsapp className="text-green-500 hover:scale-105 cursor-pointer" />
               </a>

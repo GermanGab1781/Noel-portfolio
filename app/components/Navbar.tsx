@@ -4,7 +4,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="flex md:flex-row fixed md:place-items-center md:place-content-between top-0 h-[6vh] w-full bg-gray-800 font-bold z-40">
+    <nav className="flex flex-row fixed md:place-items-center md:place-content-between top-0 h-[6vh] w-full bg-gray-800 font-bold z-40">
       <Link className="mr-2 text-5xl" href="/">🤝🏻</Link>
       <div className="flex md:flex-row flex-wrap text-center flex-col place-items-center md:w-auto w-full md:gap-x-5 gap-x-0 text-white">
         <Link className="" href="/dudas">Dudas Jurídicas</Link>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default bg-[url('../public/images/Fondo.png')] bg-cover md:pb-0 pb-20">
+    <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default bg-[url('../public/images/Fondo.png')] bg-cover md:pb-0 pb-40">
       {/* Titulo e Info */}
       <section className="md:w-[60vw] h-[90vh] md:mt-0 mt-[8vh] m-auto">
         <div className='flex flex-col md:h-[30%] md:w-[80%] w-full md:mb-0 mb-[24vh] place-content-center text-center whitespace-nowrap'>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default bg-[url('../public/images/Fondo.png')] bg-cover md:pb-0 pb-40">
       {/* Titulo e Info */}
-      <section className="md:w-[60vw] h-[90vh] md:mt-0 mt-[8vh] m-auto">
+      <section className="md:w-[60vw] h-[90vh] md:mt-0 mt-[3vh] m-auto">
         <div className='flex flex-col md:h-[30%] md:w-[80%] w-full md:mb-0 mb-[24vh] place-content-center text-center whitespace-nowrap'>
           <h1 className='md:text-6xl text-4xl font-bold text-blue-500'>Estudio Jurídico</h1>
           <h1 className='md:text-5xl text-3xl md:ml-16 md:mt-2 text-white'>Noel Maria Caceres</h1>
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </section>
       {/* Foto de Perfil */}
-      <section className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[19vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  place-content-center ">
+      <section className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[14vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  place-content-center ">
         <Image
           className='m-auto md:w-[80%] md:h-[90%] border-4 border-blue-950 rounded-lg shadow-lg opacity-90 hover:opacity-100 transition duration-300'
           src={perfil}

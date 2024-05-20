@@ -2,7 +2,7 @@ import { TbBrandWhatsapp } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 export default function page() {
     return (
-        <div className="bg-blue-900 bg-[url('../public/images/FondoConsulta.png')] bg-cover bg-no-repeat md:min-h-[94vh]">
+        <div className="bg-blue-900 md:bg-[url('../public/images/FondoConsulta.png')] bg-[url('../public/images/FondoConsultaMobile.png')] md:bg-cover bg-[length:100%_100%] bg-no-repeat md:min-h-[94vh]">
             <section className="w-full md:h-[94vh] h-full bg-gradient-to-br from-blue-900 to-transparent">
                 <h1 className="text-4xl text-center text-white pt-10 pb-5">Consultas virtuales</h1>
                 <div className="flex flex-col gap-y-2 text-xl text-gray-200 md:ml-2 md:px-0 px-2">

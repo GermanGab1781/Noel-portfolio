@@ -2,7 +2,7 @@ import { MdOutlineMailOutline } from "react-icons/md"
 import { TbBrandWhatsapp } from "react-icons/tb"
 export default function page() {
     return (
-        <div className="min-h-[94vh] bg-[url('../public/images/FondoContacto.png')] bg-no-repeat bg-cover">
+        <div className="min-h-[94vh] md:bg-[url('../public/images/FondoContacto.png')] bg-[url('../public/images/FondoContactoMobile.png')] bg-no-repeat md:bg-cover bg-[length:100%_100%] ">
             <div className="h-[70vh] place-content-center bg-gradient-to-b from-blue-900 to-transparent">
                 <h2 className="md:text-4xl text-3xl text-center">Mis medios de contacto</h2>
                 <div className="flex place-content-center gap-x-10 text-[20vh]">

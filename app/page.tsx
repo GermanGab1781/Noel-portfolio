@@ -1,11 +1,17 @@
+"use client";
 import { TbBrandWhatsapp } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 import perfil from '../public/images/Perfil.png'
 import Image from 'next/image';
 import Link from "next/link";
-export default function Home() {
+import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
+export default function Home() { 
+  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
+  
   return (
-    <main className="flex md:flex-row flex-col min-h-[94vh] cursor-default md:bg-[url('../public/images/Fondo.png')] bg-[url('../public/images/FondoMobile.png')]  md:bg-cover bg-[length:100%_100%] bg-no-repeat md:pb-0 pb-40">
+    <motion.main exit={{opacity:0}} className="flex md:flex-row flex-col min-h-[94vh] cursor-default md:bg-[url('../public/images/Fondo.png')] bg-[url('../public/images/FondoMobile.png')]  md:bg-cover bg-[length:100%_100%] bg-no-repeat md:pb-0 pb-40">
       {/* Titulo e Info */}
       <section className="md:w-[60vw] h-[90vh] md:mt-0 mt-[3vh] m-auto">
         <div className='flex flex-col md:h-[30%] md:w-[80%] w-full md:mb-0 mb-[24vh] place-content-center text-center whitespace-nowrap'>
@@ -13,7 +19,7 @@ export default function Home() {
           <h1 className='md:text-5xl text-3xl md:ml-16 md:mt-2 text-white'>Noel Maria Caceres</h1>
         </div>
         {/* Info */}
-        <div className='h-[70%] md:pl-10 pt-10 bg-gradient-to-b from-blue-900 to-transparent text-gray-300 '>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, top:"auto"}} transition={{ duration: 1 }} className='h-[70%] md:pl-10 pt-10 bg-gradient-to-b from-blue-900 to-transparent text-gray-300 '>
           {/* Ramas de derecho */}
           <h2 className='text-3xl text-white md:text-start text-center'>Ramas de derecho</h2>
           <div className='flex flex-wrap gap-5 mt-2 md:text-xl'>
@@ -57,18 +63,18 @@ export default function Home() {
               </a>
             </span>
           </div>
-        </div>
+        </motion.div>
       </section>
       {/* Foto de Perfil */}
-      <section className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[14vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  place-content-center ">
+      <motion.section initial={isMobile ?{ opacity: 0, top:0} :{ opacity: 0, x:-100}} animate={isMobile ?{ opacity: 1, top:"auto"} :{ opacity: 1, x:0}} transition={{ duration: 1 }} className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[14vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  place-content-center ">
         <Image
           className='m-auto md:w-[80%] md:h-[90%] border-4 border-blue-950 rounded-lg shadow-lg opacity-90 hover:opacity-100 transition duration-300'
           src={perfil}
           alt="Abogada Noel Maria Caceres"
         />
-      </section>
+      </motion.section>
 
-    </main>
+    </motion.main>
   );
 }
 

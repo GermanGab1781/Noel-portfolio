@@ -23,7 +23,7 @@ export default function Navbar() {
       </div>
       {/* Mobile Render */}
       <div className="md:hidden flex flex-row mt-2 justify-between w-screen transition-all">
-        <Link className="mr-2 md:text-5xl text-4xl" href="/">🤝🏻</Link>
+        <Link onClick={() => setMenu(false)} className="mr-2 md:text-5xl text-4xl" href="/">🤝🏻</Link>
         <Link onClick={() => setMenu(false)} className="absolute mr-0 text-2xl text-blue-500 left-1/2 transform -translate-x-1/2" href="/contacto">Contacto</Link>
         <span onClick={() => setMenu(!menu)} className="text-4xl text-blue-500 mr-1" ><FaBars /></span>
       </div>

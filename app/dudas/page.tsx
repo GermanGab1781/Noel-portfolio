@@ -1,8 +1,10 @@
+"use client";
+import { motion } from "framer-motion"
 import { TbBrandWhatsapp } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 export default function page() {
     return (
-        <div className="relative min-h-[94vh] md:bg-[url('../public/images/DudasBg.png')] md:bg-cover bg-[url('../public/images/DudasBgMobile.png')] bg-[length:100%_100%]">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="relative min-h-[94vh] md:bg-[url('../public/images/DudasBg.png')] md:bg-cover bg-[url('../public/images/DudasBgMobile.png')] bg-[length:100%_100%]">
             {/* Texto */}
             <section className="z-10 w-full h-[94vh] bg-gradient-to-b from-blue-900 to-transparent rounded-t-2">
                 <h1 className="md:text-4xl text-3xl text-center text-white pt-10">Resolución de Dudas jurídicas</h1>
@@ -23,6 +25,6 @@ export default function page() {
                     </div>
                 </div>
             </section>
-        </div>
+        </motion.div>
     );
 }

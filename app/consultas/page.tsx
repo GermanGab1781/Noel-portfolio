@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion"
 import { TbBrandWhatsapp } from "react-icons/tb";
+import { SiFacebook } from "react-icons/si";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
 export default function page() {
     return (
         <motion.div
@@ -16,8 +18,14 @@ export default function page() {
                     <p>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quas sequi rem minima ipsam reiciendis obcaecati ex quidem. Voluptas omnis nulla laboriosam veritatis, in dolore similique inventore aut natus adipisci repellat non provident, nisi quas harum eveniet explicabo quis dolorum numquam exercitationem id. Autem a quos placeat ad mollitia soluta sequi architecto tempora eveniet.</p>
                     <div className="w-full md:mt-10">
                         <p className="text-center md:mt-10 mt-5 font-bold text-white">Si estás listo/a para dar el siguiente paso, ¡estaré encantada de asistirte!</p>
-                        <div className="flex place-content-center gap-x-10 text-[20vh] pb-5">
-                            <a href="https://wa.me/+5492901304989?text=Hola, me gustaria tener una consulta virtual" target="_blank">
+                        <div className="flex place-content-center gap-x-2 md:text-[14vh] text-[10vh] pb-5">
+                            <a href="www.facebook.com" target="_blank">
+                                <SiFacebook className="text-blue-600 hover:scale-105 cursor-pointer md:text-[13vh] text-[9vh]" />
+                            </a>
+                            <a href="www.instagram.com" target="_blank">
+                                <FaInstagram className="text-slate-200 hover:scale-105 cursor-pointer" />
+                            </a>
+                            <a href="https://wa.me/+542901306756?text=Hola, me gustaria tener una consulta virtual" target="_blank">
                                 <TbBrandWhatsapp className="text-green-500 hover:scale-105 cursor-pointer" />
                             </a>
                             <a href="mailto:example@example.com?subject=Consulta virtual&body=Hola, me gustaria tener una consulta virtual" target="_blank">

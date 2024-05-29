@@ -72,7 +72,7 @@ export default function Home() {
       {/* Foto de Perfil */}
       <motion.section
         initial={isMobile ? { opacity: 0, top: 0 } : { opacity: 0, x: -100 }} animate={isMobile ? { opacity: 1, top: "auto" } : { opacity: 1, x: 0 }} transition={{ duration: 1 }}
-        className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[15vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  place-content-center "
+        className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[15vh] md:relative absolute md:left-auto left-[46%] md:transform-none transform md:translate-x-0 -translate-x-1/2  "
       >
         <Image
           className='m-auto md:w-[80%] md:h-[90%] border-4 border-blue-950 rounded-lg shadow-lg opacity-90 hover:opacity-100 transition duration-300'

@@ -19,7 +19,7 @@ export default function page() {
                     <p className="text-center text-2xl font-bold">Contactate y hablemos sobre tus dudas</p>
                     <div className="flex place-content-center gap-x-2 md:text-[14vh] text-[10vh] pb-5">
                         <a href="www.facebook.com" target="_blank">
-                            <SiFacebook className="text-blue-600 hover:scale-105 cursor-pointer text-[9vh] " />
+                            <SiFacebook className="text-blue-600 hover:scale-105 cursor-pointer md:text-[13vh] text-[10vh] " />
                         </a>
                         <a href="www.instagram.com" target="_blank">
                             <FaInstagram className="text-slate-200 hover:scale-105 cursor-pointer" />

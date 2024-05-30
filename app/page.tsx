@@ -44,8 +44,12 @@ export default function Home() {
             <li onClick={() => SwalExample("Divorcios")} className="mt-1 border-b border-blue-200 hover:border-blue-500 hover:text-white">Divorcios</li>
           </ul>
           {/* Links */}
-          <Link href="/dudas" className='text-2xl hover:text-white group'><p className='mt-10 w-[95%] mx-auto  border group-hover:border-b-blue-500 border-gray-900 rounded-xl bg-blue-950 text-center  transition-all'>Resolución de dudas jurídicas</p></Link>
-          <Link href="/consultas" className='text-2xl hover:text-white group'><p className="mt-2 w-[95%] mx-auto  border group-hover:border-b-blue-500 border-gray-900 rounded-xl bg-blue-950 text-center  transition-all">Consultas virtuales</p></Link>
+          <Link href="/dudas" className='text-2xl text-white group'><p className='mt-10 w-[95%] mx-auto  border group-hover:border-b-blue-500 border-gray-900 rounded-xl bg-blue-950 text-center  transition-all'>
+            Resolución de dudas jurídicas
+            </p></Link>
+          <Link href="/consultas" className='text-2xl text-white group'><p className="mt-2 w-[95%] mx-auto  border group-hover:border-b-blue-500 border-gray-900 rounded-xl bg-blue-950 text-center  transition-all">
+            Consultas virtuales
+            </p></Link>
           <div className="flex md:flex-row flex-col md:text-start text-center md:mt-10 mt-5 m-auto">
             <p className='text-2xl text-blue-500 my-auto'>Contactame:</p>
             <span className="flex place-items-center gap-x-4 md:ml-10 place-content-center md:text-[50px] text-[60px]">
@@ -71,11 +75,11 @@ export default function Home() {
       </section>
       {/* Foto de Perfil */}
       <motion.section
-        initial={isMobile ? { opacity: 0, top: 0 } : { opacity: 0, x: -100 }} animate={isMobile ? { opacity: 1, top: "auto" } : { opacity: 1, x: 0 }} transition={{ duration: 1 }}
-        className="md:w-[40vw] md:h-[90vh] h-[25vh] aspect-square md:mt-0 mt-[15vh] md:relative absolute md:left-auto left-[46%] md:transform-none transform md:translate-x-0 -translate-x-1/2  "
+        initial={isMobile ? { opacity: 0, top: 0 } : { opacity: 0, x: -100 }} animate={isMobile ? { opacity: 1, top: 60 } : { opacity: 1, x: 0 }} transition={{ duration: 1 }} 
+        className="md:w-[40vw] md:h-[90vh] h-[50vw] aspect-square md:mt-0 mt-[15vh] md:relative absolute md:left-auto left-1/2 md:transform-none transform md:translate-x-0 -translate-x-1/2  "
       >
         <Image
-          className='m-auto md:w-[80%] md:h-[90%] border-4 border-blue-950 rounded-lg shadow-lg opacity-90 hover:opacity-100 transition duration-300'
+          className='m-auto md:mt-2 md:w-[80%] md:h-[90%] border-4 border-blue-950 rounded-lg shadow-lg opacity-90 hover:opacity-100 transition duration-300'
           src={perfil}
           alt="Abogada Noel Maria Caceres"
         />
